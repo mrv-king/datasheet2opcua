@@ -1,6 +1,6 @@
 from PyPDF2 import PdfReader
   
-datasheet = PdfReader("C:/Users/nikgal-local/OneDrive - ltu.se/Desktop/MAIN_FOLDER/PYTHON/OPC_UA/opcua_tree_builder/test/20.pdf")
+datasheet = PdfReader("file_path")
 
 interfaces = ["smbus", " i2c ", " spi ", " uart ", "smaart wire"]
 ic_types = ["current meas", "temperature sensor", "humidity sensor", "voltage meas", "power meas", "inductive sens", " hall "]
@@ -228,4 +228,4 @@ if "HUMIDITY" in ic_type:
     print ("HUMIDITY ACCURACY: ")
     print (ic_hum_accuracy)
 
-#generate_xml_file(ic_name, ic_type, ic_interfaces, operating_range, ic_temp_accuracy)
+#generate_xml_file(ic_name, ic_type, ic_interfaces, operating_range, ic_temp_accuracy)  
